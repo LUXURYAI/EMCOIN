@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EMCOIN — Official Website</title>
+  <meta name="description" content="EMCOIN — цифровая валюта нового поколения. Скорость, надежность и глобальное принятие." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    :root { --gold:#facc15; }
+    body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+    .gold { color: var(--gold); }
+    .btn { transition: transform .2s, box-shadow .2s; }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(250,204,21,.25); }
+    .glass{ background: rgba(0,0,0,.35); backdrop-filter: blur(6px); }
+    .logo{ width: 48px; height: 48px; object-fit: contain; }
+  </style>
+</head>
+<body class="bg-green-900 text-yellow-100">
+  <!-- Config -->
+  <script>
+    const CONTRACT_ADDRESS = "TXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"; 
+    const TELEGRAM_URL = "https://t.me/emcoin";
+    const TWITTER_URL  = "https://twitter.com/emcoin";
+    const EMAIL_ADDR   = "support@emcoin.vip";
+  </script>
+
+  <header class="glass sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+      <a href="#home" class="flex items-center space-x-3">
+        <img src="assets/logo.png" alt="EMCOIN Logo" class="logo" onerror="this.style.display='none'">
+        <span class="text-2xl font-extrabold gold">EMCOIN</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6 text-sm">
+        <a href="#home" data-i18n="nav.home" class="hover:text-yellow-300">Главная</a>
+        <a href="#tokenomics" data-i18n="nav.tokenomics" class="hover:text-yellow-300">Токеномика</a>
+        <a href="#buy" data-i18n="nav.buy" class="hover:text-yellow-300">Как купить</a>
+        <a href="#contact" data-i18n="nav.contact" class="hover:text-yellow-300">Контакты</a>
+      </nav>
+      <div class="flex items-center space-x-2">
+        <select id="lang" class="bg-green-800 border border-yellow-400 rounded px-2 py-1 text-sm focus:outline-none">
+          <option value="ru">РУС</option>
+          <option value="en">EN</option>
+          <option value="ar">العربية</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="relative overflow-hidden">
+    <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-28 text-center">
+      <img src="assets/logo.png" alt="EMCOIN" class="h-28 w-28 md:h-36 md:w-36 mx-auto mb-6" onerror="this.style.display='none'">
+      <h1 class="text-4xl md:text-6xl font-extrabold gold mb-4">EMCOIN</h1>
+      <p class="max-w-2xl mx-auto text-lg md:text-xl text-yellow-100 mb-8" data-i18n="hero.subtitle">
+        Цифровая валюта нового поколения: скорость, надежность и глобальное принятие.
+      </p>
+      <a href="#buy" class="btn inline-block px-7 py-3 bg-yellow-400 text-black font-bold rounded-xl" data-i18n="hero.cta">Купить EMCOIN</a>
+    </div>
+  </section>
+
+  <section id="tokenomics" class="py-16 md:py-20 bg-black bg-opacity-70">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold gold mb-6" data-i18n="tok.title">Токеномика</h2>
+      <p class="max-w-3xl mx-auto text-lg mb-2" data-i18n="tok.supply">
+        Общее предложение: 100,000,000 EMCOIN
+      </p>
+      <p class="max-w-3xl mx-auto text-lg mb-8" data-i18n="tok.distribution">
+        Распределение: 40% Пул ликвидности • 25% Экосистема • 15% Маркетинг • 10% Команда • 5% Резерв • 5% Private/Whitelist
+      </p>
+      <a id="contractLink" href="#" target="_blank" class="underline text-yellow-300 text-sm">Открыть контракт EMCOIN</a>
+    </div>
+  </section>
+
+  <section id="buy" class="py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold gold mb-6 text-center" data-i18n="buy.title">Как купить</h2>
+      <ol class="grid md:grid-cols-2 gap-5 text-lg">
+        <li data-i18n="buy.step1" class="bg-green-800 p-5 rounded-xl">1. Установите кошелёк TronLink (Chrome/Brave) и создайте TRON-адрес.</li>
+        <li data-i18n="buy.step2" class="bg-green-800 p-5 rounded-xl">2. Пополните кошелёк USDT (TRC‑20) и немного TRX на комиссии.</li>
+        <li data-i18n="buy.step3" class="bg-green-800 p-5 rounded-xl">3. Перейдите на DEX SunSwap и добавьте контракт EMCOIN.</li>
+        <li data-i18n="buy.step4" class="bg-green-800 p-5 rounded-xl">4. Обменяйте USDT на EMCOIN и подтвердите транзакцию.</li>
+      </ol>
+      <div class="mt-6 flex flex-wrap items-center gap-3">
+        <a id="sunswap" class="btn px-6 py-3 bg-yellow-400 text-black font-bold rounded-xl" target="_blank" href="#">Открыть SunSwap</a>
+        <a id="tronlink" class="underline" target="_blank" href="https://www.tronlink.org/">Скачать TronLink</a>
+      </div>
+      <p class="mt-4 text-sm opacity-80" data-i18n="buy.note">Примечание: если пула ликвидности ещё нет, обмен будет недоступен — дождитесь объявления в Telegram.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 md:py-20 bg-black bg-opacity-70">
+    <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
+      <h2 class="text-3xl md:text-4xl font-bold gold mb-6" data-i18n="contact.title">Контакты</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div>
+          <p class="font-semibold">Email</p>
+          <p><a id="emailLink" class="text-yellow-300 underline">support@emcoin.vip</a></p>
+        </div>
+        <div>
+          <p class="font-semibold">Telegram</p>
+          <p><a id="tgLink" class="text-yellow-300 underline" target="_blank">t.me/emcoin</a></p>
+        </div>
+        <div>
+          <p class="font-semibold">Twitter</p>
+          <p><a id="twLink" class="text-yellow-300 underline" target="_blank">@emcoin</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center bg-green-900 text-yellow-200 text-sm">
+    <img src="assets/logo.png" alt="EMCOIN Logo" class="h-10 mx-auto mb-2" onerror="this.style.display='none'">
+    © 2025 EMCOIN. All Rights Reserved.
+  </footer>
+
+  <script>
+    const dict = {
+      "ru": {"nav.home":"Главная","nav.tokenomics":"Токеномика","nav.buy":"Как купить","nav.contact":"Контакты",
+        "hero.subtitle":"Цифровая валюта нового поколения: скорость, надежность и глобальное принятие.",
+        "hero.cta":"Купить EMCOIN","tok.title":"Токеномика",
+        "tok.supply":"Общее предложение: 100,000,000 EMCOIN",
+        "tok.distribution":"Распределение: 40% Пул ликвидности • 25% Экосистема • 15% Маркетинг • 10% Команда • 5% Резерв • 5% Private/Whitelist",
+        "buy.title":"Как купить","buy.step1":"1. Установите кошелёк TronLink (Chrome/Brave) и создайте TRON-адрес.",
+        "buy.step2":"2. Пополните кошелёк USDT (TRC‑20) и немного TRX на комиссии.",
+        "buy.step3":"3. Перейдите на DEX SunSwap и добавьте контракт EMCOIN.",
+        "buy.step4":"4. Обменяйте USDT на EMCOIN и подтвердите транзакцию.",
+        "buy.note":"Примечание: если пула ликвидности ещё нет, обмен будет недоступен — дождитесь объявления в Telegram.",
+        "contact.title":"Контакты"},
+      "en": {"nav.home":"Home","nav.tokenomics":"Tokenomics","nav.buy":"How to Buy","nav.contact":"Contact",
+        "hero.subtitle":"Next‑generation digital currency: speed, reliability, global adoption.",
+        "hero.cta":"Get EMCOIN","tok.title":"Tokenomics",
+        "tok.supply":"Total Supply: 100,000,000 EMCOIN",
+        "tok.distribution":"Distribution: 40% Liquidity Pool • 25% Ecosystem • 15% Marketing • 10% Team • 5% Reserve • 5% Private/Whitelist",
+        "buy.title":"How to Buy","buy.step1":"1. Install TronLink (Chrome/Brave) and create a TRON address.",
+        "buy.step2":"2. Fund your wallet with USDT (TRC‑20) and a little TRX for gas.",
+        "buy.step3":"3. Go to the SunSwap DEX and add the EMCOIN contract.",
+        "buy.step4":"4. Swap USDT → EMCOIN and confirm the transaction.",
+        "buy.note":"Note: if the liquidity pool is not live yet, swapping will be unavailable — wait for the Telegram announcement.",
+        "contact.title":"Contact"},
+      "ar": {"nav.home":"الرئيسية","nav.tokenomics":"الاقتصاد الرمزي","nav.buy":"كيفية الشراء","nav.contact":"تواصل",
+        "hero.subtitle":"عملة رقمية للجيل القادم: سرعة وموثوقية واعتماد عالمي.",
+        "hero.cta":"اشترِ EMCOIN","tok.title":"الاقتصاد الرمزي",
+        "tok.supply":"الإجمالي المتداول: 100,000,000 EMCOIN",
+        "tok.distribution":"التوزيع: ‎40% سيولة • ‎25% منظومة • ‎15% تسويق • ‎10% فريق • ‎5% احتياطي • ‎5% بيع خاص/قائمة بيضاء",
+        "buy.title":"كيفية الشراء","buy.step1":"1. ثبّت محفظة TronLink (Chrome/Brave) وأنشئ عنوان TRON.",
+        "buy.step2":"2. موّل المحفظة بـ USDT (TRC‑20) وقليل من TRX للرسوم.",
+        "buy.step3":"3. انتقل إلى منصة SunSwap وأضف عقد EMCOIN.",
+        "buy.step4":"4. قم بالمبادلة من USDT إلى EMCOIN وأكّد العملية.",
+        "buy.note":"ملاحظة: إذا لم يتم تفعيل مجمع السيولة بعد فلن تتاح المبادلة — انتظر إعلان تيليغرام.",
+        "contact.title":"تواصل"}
+    };
+    function applyLang(lang){
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+      document.querySelectorAll("[data-i18n]").forEach(el=>{
+        const key = el.getAttribute("data-i18n");
+        if(dict[lang][key]) el.textContent = dict[lang][key];
+      });
+    }
+    document.getElementById("lang").addEventListener("change", (e)=>applyLang(e.target.value));
+    applyLang("ru");
+    // Links
+    document.getElementById("emailLink").href = "mailto:" + EMAIL_ADDR;
+    document.getElementById("emailLink").textContent = EMAIL_ADDR;
+    document.getElementById("tgLink").href = TELEGRAM_URL;
+    document.getElementById("twLink").href = TWITTER_URL;
+    const sunswap = document.getElementById("sunswap");
+    sunswap.href = "https://sunswap.com/#/v2?outputCurrency=" + encodeURIComponent(CONTRACT_ADDRESS);
+    const contractLink = document.getElementById("contractLink");
+    contractLink.href = "https://tronscan.org/#/token20/" + CONTRACT_ADDRESS;
+  </script>
+</body>
+</html>
