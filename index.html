@@ -1,402 +1,80 @@
 <!DOCTYPE html>
-<html lang="ru" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EMCOIN — Official Website</title>
-  <meta name="description" content="EMCOIN — цифровая валюта нового поколения. Скорость, надежность и глобальное принятие." />
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    :root { --gold:#facc15; }
-    body { font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
-    .gold { color: var(--gold); }
-    .btn { transition: transform .2s, box-shadow .2s; }
-    .btn:hover { transform: translateY(-1px); box-shadow: 0 10px 20px rgba(250,204,21,.25); }
-    .glass{ background: rgba(0,0,0,.35); backdrop-filter: blur(6px); }
-    .logo{ width: 48px; height: 48px; object-fit: contain; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMCOIN Ecosystem | EMC Messenger</title>
+<meta name="description" content="EMCOIN powers EMC Messenger, a privacy-focused ecosystem with PRO and ULTIMATE memberships paid in EMCOIN.">
+<meta property="og:title" content="EMCOIN Ecosystem | EMC Messenger">
+<meta property="og:description" content="The World's Most Confidential Messenger. Privacy-first communication powered by EMCOIN.">
+<meta property="og:url" content="https://emcoin.vip/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#06140d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+*{box-sizing:border-box}
+:root{--bg:#020805;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.12);--green:#00e676;--green2:#46ffad;--gold:#d4af37;--gold2:#ffe08a;--text:#f2fff7;--muted:#a8c7b4;--max:1220px;--shadow:0 25px 80px rgba(0,0,0,.42)}
+html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 10% 0%,rgba(0,230,118,.16),transparent 25%),radial-gradient(circle at 90% 10%,rgba(212,175,55,.14),transparent 25%),linear-gradient(180deg,#020805,#06140d 42%,#030806);color:var(--text);line-height:1.55;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(var(--max),calc(100% - 32px));margin:0 auto}.section{padding:90px 0}.center{text-align:center;margin-left:auto;margin-right:auto}.section-head{max-width:820px;margin-bottom:42px}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(42px,7vw,86px);line-height:.96;letter-spacing:-.045em;margin:18px 0}h2{font-size:clamp(32px,5vw,56px);line-height:1.04;letter-spacing:-.035em;margin:14px 0 16px}h3{font-size:24px;margin-bottom:10px}p{font-size:18px;color:var(--muted)}.green{color:var(--green2)}.gold{color:var(--gold2)}
+header{position:sticky;top:0;z-index:10;background:rgba(2,8,5,.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:14px}.mark{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;border:1px solid rgba(0,230,118,.32);background:linear-gradient(135deg,rgba(0,230,118,.24),rgba(212,175,55,.16));font-weight:900;color:var(--gold2);box-shadow:0 0 34px rgba(0,230,118,.18)}.brand strong{display:block;font-size:21px;letter-spacing:.12em}.brand span{display:block;color:var(--muted);font-size:12px;letter-spacing:.28em;text-transform:uppercase}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:14px;color:rgba(242,255,247,.78);font-weight:700}.nav-right{display:flex;align-items:center;gap:12px}.lang{display:flex;gap:6px;padding:6px;border-radius:999px;background:rgba(255,255,255,.05);border:1px solid var(--line)}.lang button{border:0;background:transparent;color:var(--muted);padding:8px 10px;border-radius:999px;cursor:pointer;font-weight:800}.lang button.active{background:linear-gradient(135deg,var(--green),var(--gold));color:#031008}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border-radius:999px;border:1px solid var(--line);font-weight:900;cursor:pointer;transition:.22s;text-align:center}.btn:hover{transform:translateY(-2px)}.primary{color:#031008;background:linear-gradient(135deg,var(--green),var(--gold2));border:0;box-shadow:0 14px 40px rgba(0,230,118,.22)}.secondary{background:rgba(255,255,255,.06)}.goldbtn{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#130e04;border:0}
+.eyebrow{display:inline-flex;padding:10px 14px;border-radius:999px;border:1px solid rgba(0,230,118,.22);background:rgba(0,230,118,.06);color:var(--green2);font-size:12px;font-weight:900;letter-spacing:.18em;text-transform:uppercase}
+.hero{min-height:calc(100vh - 82px);display:flex;align-items:center;padding:70px 0 88px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}.hero p{max-width:720px;font-size:20px;line-height:1.75}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.chip{border:1px solid var(--line);background:rgba(255,255,255,.045);color:rgba(242,255,247,.78);padding:10px 14px;border-radius:999px;font-size:13px;font-weight:800}
+.orbit-stage{position:relative;min-height:620px;display:grid;place-items:center;perspective:1000px}.glow{position:absolute;width:540px;height:540px;border-radius:50%;background:radial-gradient(circle,rgba(0,230,118,.18),rgba(212,175,55,.10) 38%,transparent 67%);filter:blur(12px);animation:pulse 5s infinite}.center-orb{position:relative;z-index:3;width:228px;height:228px;border-radius:50%;display:grid;place-items:center;text-align:center;border:1px solid rgba(212,175,55,.42);background:linear-gradient(145deg,rgba(0,230,118,.16),rgba(212,175,55,.16)),rgba(3,16,8,.9);box-shadow:0 0 80px rgba(0,230,118,.23)}.center-orb strong{font-size:36px}.center-orb span{display:block;color:var(--gold2);font-size:12px;letter-spacing:.22em;text-transform:uppercase}.ring{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.09)}.r1{width:360px;height:360px;animation:rot 24s linear infinite}.r2{width:485px;height:485px;animation:rev 34s linear infinite}.r3{width:610px;height:610px;animation:rot 48s linear infinite}.ico{position:absolute;left:50%;top:50%;width:92px;height:92px;margin:-46px;display:grid;place-items:center;text-align:center;border-radius:22px;border:1px solid rgba(0,230,118,.22);background:rgba(4,18,10,.78);box-shadow:0 18px 50px rgba(0,0,0,.34);font-size:12px;font-weight:900}.ico b{font-size:24px;display:block}.i1{transform:rotate(0deg) translateX(180px) rotate(0)}.i2{transform:rotate(120deg) translateX(180px) rotate(-120deg)}.i3{transform:rotate(240deg) translateX(180px) rotate(-240deg)}.i4{transform:rotate(30deg) translateX(242px) rotate(-30deg)}.i5{transform:rotate(150deg) translateX(242px) rotate(-150deg)}.i6{transform:rotate(270deg) translateX(242px) rotate(-270deg)}.i7{transform:rotate(0deg) translateX(305px) rotate(0)}.i8{transform:rotate(90deg) translateX(305px) rotate(-90deg)}.i9{transform:rotate(180deg) translateX(305px) rotate(-180deg)}.i10{transform:rotate(270deg) translateX(305px) rotate(-270deg)}@keyframes rot{to{transform:rotate(360deg)}}@keyframes rev{to{transform:rotate(-360deg)}}@keyframes pulse{50%{transform:scale(1.04);opacity:1}}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card,.stat,.plan,.box{border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.07),rgba(255,255,255,.035));border-radius:26px;box-shadow:var(--shadow)}.stat{padding:26px;text-align:center}.stat strong{font-size:34px;color:var(--green2)}.stat span{display:block;color:var(--muted);font-weight:800;margin-top:6px}.card{padding:28px;transition:.22s}.card:hover{transform:translateY(-4px);border-color:rgba(0,230,118,.32)}.icon{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;margin-bottom:16px;background:rgba(0,230,118,.09);border:1px solid rgba(0,230,118,.18);font-size:28px}.card p{font-size:16px;margin-bottom:0}
+.comp{width:100%;border-collapse:collapse;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid var(--line)}.comp th,.comp td{padding:18px;border-bottom:1px solid rgba(255,255,255,.08);text-align:center}.comp th:first-child,.comp td:first-child{text-align:left}.comp th{color:var(--gold2);background:rgba(255,255,255,.04)}.yes{color:var(--green2);font-weight:900}.no{color:#ff7a7a;font-weight:900}.warn{color:var(--gold2);font-weight:900}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.step{padding:22px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.045)}.num{color:var(--gold2);font-size:13px;letter-spacing:.18em;font-weight:900}.step strong{display:block;font-size:18px;margin-top:10px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.plan{padding:30px;position:relative}.plan.featured{border-color:rgba(212,175,55,.52);box-shadow:0 24px 80px rgba(212,175,55,.13)}.plan h3{font-size:30px}.price{font-size:38px;font-weight:900;color:var(--green2);margin:14px 0}.plan ul{padding-left:18px;color:var(--muted);line-height:2}.badge{display:inline-flex;padding:8px 12px;border-radius:999px;background:rgba(212,175,55,.14);color:var(--gold2);font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.download{display:grid;grid-template-columns:.9fr 1.1fr;gap:28px;align-items:center;border:1px solid var(--line);background:linear-gradient(135deg,rgba(0,230,118,.08),rgba(212,175,55,.07));border-radius:34px;padding:34px}.phone{width:250px;max-width:100%;height:500px;margin:auto;border-radius:42px;border:10px solid rgba(255,255,255,.09);background:#06130d;box-shadow:0 28px 90px rgba(0,0,0,.42);padding:22px;display:flex;flex-direction:column;justify-content:center;text-align:center}.phone .lock{font-size:54px}.phone strong{font-size:30px;margin-top:15px}.phone span{color:var(--muted);margin-top:8px}
+.utility{min-height:420px;border-radius:32px;border:1px solid var(--line);background:radial-gradient(circle at center,rgba(0,230,118,.16),transparent 38%),rgba(255,255,255,.035);display:grid;place-items:center;position:relative;overflow:hidden}.u-center{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,rgba(0,230,118,.25),rgba(212,175,55,.18));border:1px solid rgba(212,175,55,.42);font-size:26px;font-weight:900}.node{position:absolute;padding:12px 16px;border-radius:999px;background:rgba(3,16,8,.82);border:1px solid rgba(0,230,118,.22);font-weight:900;font-size:13px}.n1{top:55px;left:50%;transform:translateX(-50%)}.n2{top:170px;right:85px}.n3{bottom:65px;right:160px}.n4{bottom:65px;left:160px}.n5{top:170px;left:85px}
+.road{display:grid;gap:16px}.road-item{display:grid;grid-template-columns:140px 1fr;gap:18px;align-items:center}.year{color:var(--gold2);font-weight:900;font-size:22px}.road-content{padding:22px;border-radius:22px;border:1px solid var(--line);background:rgba(255,255,255,.045)}
+.faq{display:grid;gap:14px}.faq details{border:1px solid var(--line);background:rgba(255,255,255,.045);border-radius:18px;padding:18px}.faq summary{cursor:pointer;font-weight:900}.faq p{font-size:16px;margin:12px 0 0}
+footer{border-top:1px solid var(--line);background:rgba(0,0,0,.25);padding:46px 0}.footer{display:grid;grid-template-columns:1.2fr repeat(4,1fr);gap:26px}.footer h4{margin:0 0 14px;color:var(--gold2)}.footer a,.footer span{display:block;color:var(--muted);margin:9px 0;font-size:14px}.disc{margin-top:28px;color:rgba(242,255,247,.52);font-size:13px;line-height:1.7;border-top:1px solid rgba(255,255,255,.08);padding-top:22px}
+[dir=rtl] body{text-align:right}[dir=rtl] .comp th:first-child,[dir=rtl] .comp td:first-child{text-align:right}
+@media(max-width:1050px){nav{display:none}.hero-grid,.download,.grid2{grid-template-columns:1fr}.stats,.grid4,.grid3,.plans,.steps,.footer{grid-template-columns:1fr 1fr}.orbit-stage{min-height:560px;transform:scale(.86)}}
+@media(max-width:680px){.section{padding:72px 0}.stats,.grid4,.grid3,.plans,.steps,.footer{grid-template-columns:1fr}.nav{flex-direction:column;align-items:flex-start;padding:14px 0}.nav-right{width:100%;justify-content:space-between}.hero{padding-top:44px}.orbit-stage{min-height:430px;transform:scale(.62);margin:-60px 0}.actions .btn{width:100%}.road-item{grid-template-columns:1fr}.node{position:static;margin:6px}.utility{display:flex;flex-wrap:wrap;justify-content:center;padding:24px}.u-center{order:-1;width:145px;height:145px}.comp{font-size:13px}.comp th,.comp td{padding:12px 8px}}
+</style>
 </head>
-<body class="bg-green-900 text-yellow-100">
-  <!-- Config -->
-  <script>
-    // Основные адреса
-    const TRC20_CONTRACT_ADDRESS = "TQRvPWYgkR76zL11KYiyXLi3HqP1ETHhWX"; // EMCOIN TRC-20
-    const BEP20_CONTRACT_ADDRESS = "0x625E933b7353a2ae422d2b4Df504C969f2Ce973c"; // EMCOIN BEP-20
-    const BACKUP_USDT_ADDRESS    = "TAHU16f5mt2ZZD5zuX2Ed82MCWthCA8Q7R"; // <-- USDT TRC-20
+<body>
+<header><div class="container nav"><a href="#home" class="brand"><div class="mark">EMC</div><div><strong>EMCOIN</strong><span data-i18n="brand_sub">Ecosystem</span></div></a><nav><a href="#messenger" data-i18n="nav_messenger">Messenger</a><a href="#plans" data-i18n="nav_plans">Plans</a><a href="#download" data-i18n="nav_download">Download</a><a href="#token" data-i18n="nav_token">Token</a><a href="#roadmap" data-i18n="nav_roadmap">Roadmap</a><a href="#contact" data-i18n="nav_contact">Contact</a></nav><div class="nav-right"><div class="lang"><button data-lang="en" class="active">EN</button><button data-lang="ru">RU</button><button data-lang="ar">AR</button></div><a href="#download" class="btn primary" data-i18n="nav_cta">Download APK</a></div></div></header>
 
-    const TELEGRAM_URL = "https://t.me/emcoin";
-    const TWITTER_URL  = "https://twitter.com/emcoin";
-    const EMAIL_ADDR   = "support@emcoin.vip";
-  </script>
+<main>
+<section class="hero" id="home"><div class="container hero-grid"><div><div class="eyebrow" data-i18n="hero_eyebrow">Privacy • Messenger • Utility Token</div><h1><span data-i18n="hero_title_1">The World's Most Confidential</span> <span class="green" data-i18n="hero_title_2">Messenger</span></h1><p data-i18n="hero_text">EMCOIN powers a privacy-focused digital ecosystem built around EMC Messenger, premium privacy features and future digital services.</p><div class="actions"><a class="btn primary" href="#download" data-i18n="btn_download">Download APK</a><a class="btn goldbtn" href="#plans" data-i18n="btn_upgrade">Upgrade Account</a><a class="btn secondary" href="#token" data-i18n="btn_buy">Buy EMCOIN</a></div><div class="chips"><span class="chip" data-i18n="chip_1">Powered by EMCOIN</span><span class="chip" data-i18n="chip_2">PRO & ULTIMATE Plans</span><span class="chip" data-i18n="chip_3">Android APK Coming Soon</span></div></div><div class="orbit-stage" aria-hidden="true"><div class="glow"></div><div class="ring r3"><div class="ico i7"><b>☁</b>Cloud</div><div class="ico i8"><b>💳</b>Payments</div><div class="ico i9"><b>🏢</b>Business</div><div class="ico i10"><b>🆔</b>Identity</div></div><div class="ring r2"><div class="ico i4"><b>👑</b>PRO</div><div class="ico i5"><b>💎</b>Ultimate</div><div class="ico i6"><b>📱</b>APK</div></div><div class="ring r1"><div class="ico i1"><b>💬</b>Messenger</div><div class="ico i2"><b>🛡</b>Privacy</div><div class="ico i3"><b>🔐</b>Security</div></div><div class="center-orb"><div><strong>EMC</strong><span>ecosystem</span></div></div></div></div></section>
 
-  <header class="glass sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
-      <a href="#home" class="flex items-center space-x-3">
-        <img src="assets/logo.png" alt="EMCOIN Logo" class="logo" onerror="this.style.display='none'">
-        <span class="text-2xl font-extrabold gold">EMCOIN</span>
-      </a>
-      <nav class="hidden md:flex items-center space-x-6 text-sm">
-        <a href="#home" data-i18n="nav.home" class="hover:text-yellow-300">Главная</a>
-        <a href="#tokenomics" data-i18n="nav.tokenomics" class="hover:text-yellow-300">Токеномика</a>
-        <a href="#buy" data-i18n="nav.buy" class="hover:text-yellow-300">Как купить</a>
-        <a href="#privacy" data-i18n="nav.privacy" class="hover:text-yellow-300">Приватность</a>
-        <a href="#contact" data-i18n="nav.contact" class="hover:text-yellow-300">Контакты</a>
-      </nav>
-      <div class="flex items-center space-x-2">
-        <select id="lang" class="bg-green-800 border border-yellow-400 rounded px-2 py-1 text-sm focus:outline-none">
-          <option value="ru">РУС</option>
-          <option value="en">EN</option>
-          <option value="ar">العربية</option>
-        </select>
-      </div>
-    </div>
-  </header>
+<section class="section"><div class="container stats"><div class="stat"><strong>100M</strong><span data-i18n="stat_supply">Total Supply</span></div><div class="stat"><strong>TRC20</strong><span data-i18n="stat_tron">TRON Network</span></div><div class="stat"><strong>BEP20</strong><span data-i18n="stat_bsc">BSC Network</span></div><div class="stat"><strong>24/7</strong><span data-i18n="stat_dev">Development Vision</span></div></div></section>
 
-  <section id="home" class="relative overflow-hidden">
-    <div class="relative max-w-6xl mx-auto px-6 py-20 md:py-28 text-center">
-      <img src="assets/logo.png" alt="EMCOIN" class="h-28 w-28 md:h-36 md:w-36 mx-auto mb-6" onerror="this.style.display='none'">
-      <h1 class="text-4xl md:text-6xl font-extrabold gold mb-4">EMCOIN</h1>
-      <p class="max-w-2xl mx-auto text-lg md:text-xl text-yellow-100 mb-8" data-i18n="hero.subtitle">
-        Цифровая валюта нового поколения: скорость, надежность и глобальное принятие.
-      </p>
-      <a href="#buy" class="btn inline-block px-7 py-3 bg-yellow-400 text-black font-bold rounded-xl" data-i18n="hero.cta">Купить EMCOIN</a>
-    </div>
-  </section>
+<section class="section" id="messenger"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="why_eyebrow">EMC Messenger</div><h2 data-i18n="why_title">Privacy is not a feature. Privacy is the foundation.</h2><p data-i18n="why_text">EMC Messenger is designed for users who want more control over their conversations, identity and digital communication.</p></div><div class="grid4"><div class="card"><div class="icon">🛡</div><h3 data-i18n="feature_1_title">Screenshot Protection</h3><p data-i18n="feature_1_text">Designed to detect screenshots and screen recording attempts.</p></div><div class="card"><div class="icon">👤</div><h3 data-i18n="feature_2_title">Anonymous Accounts</h3><p data-i18n="feature_2_text">Communicate without exposing unnecessary personal identity.</p></div><div class="card"><div class="icon">🔐</div><h3 data-i18n="feature_3_title">Secret Chats</h3><p data-i18n="feature_3_text">Private conversations with advanced protection tools.</p></div><div class="card"><div class="icon">🔥</div><h3 data-i18n="feature_4_title">Self-Destruct Messages</h3><p data-i18n="feature_4_text">Messages can automatically disappear based on privacy settings.</p></div></div></div></section>
 
-  <section id="tokenomics" class="py-16 md:py-20 bg-black bg-opacity-70">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold gold mb-6" data-i18n="tok.title">Токеномика</h2>
-      <p class="max-w-3xl mx-auto text-lg mb-2" data-i18n="tok.supply">
-        Общее предложение: 100,000,000 EMCOIN
-      </p>
-      <p class="max-w-3xl mx-auto text-lg mb-8" data-i18n="tok.distribution">
-        Распределение: 40% Пул ликвидности • 25% Экосистема • 15% Маркетинг • 10% Команда • 5% Резерв • 5% Private/Whitelist
-      </p>
-      <div class="flex flex-col items-center space-y-2 text-sm">
-        <a id="contractLinkTron" href="#" target="_blank" class="underline text-yellow-300" data-i18n="tok.contractTron">
-          Открыть контракт EMCOIN (TRC-20)
-        </a>
-        <a id="contractLinkBsc" href="#" target="_blank" class="underline text-yellow-300" data-i18n="tok.contractBsc">
-          Открыть контракт EMCOIN (BEP-20)
-        </a>
-      </div>
-    </div>
-  </section>
+<section class="section"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="compare_eyebrow">Comparison</div><h2 data-i18n="compare_title">Built for serious privacy.</h2></div><table class="comp"><thead><tr><th data-i18n="table_feature">Feature</th><th>EMC</th><th>Telegram</th><th>WhatsApp</th></tr></thead><tbody><tr><td data-i18n="table_1">Screenshot Detection</td><td class="yes">✓</td><td class="no">×</td><td class="no">×</td></tr><tr><td data-i18n="table_2">Secret Chats</td><td class="yes">✓</td><td class="warn">Limited</td><td class="no">×</td></tr><tr><td data-i18n="table_3">Anonymous Accounts</td><td class="yes">✓</td><td class="no">×</td><td class="no">×</td></tr><tr><td data-i18n="table_4">Stealth Mode</td><td class="yes">✓</td><td class="no">×</td><td class="no">×</td></tr><tr><td data-i18n="table_5">Self-Destruct Messages</td><td class="yes">✓</td><td class="warn">Limited</td><td class="no">×</td></tr></tbody></table></div></section>
 
-  <section id="buy" class="py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold gold mb-6 text-center" data-i18n="buy.title">Как купить</h2>
+<section class="section"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="how_eyebrow">How It Works</div><h2 data-i18n="how_title">From download to premium privacy.</h2></div><div class="steps"><div class="step"><div class="num">01</div><strong data-i18n="step_1">Download EMC Messenger</strong></div><div class="step"><div class="num">02</div><strong data-i18n="step_2">Create Your Account</strong></div><div class="step"><div class="num">03</div><strong data-i18n="step_3">Acquire EMCOIN</strong></div><div class="step"><div class="num">04</div><strong data-i18n="step_4">Upgrade To PRO Or ULTIMATE</strong></div><div class="step"><div class="num">05</div><strong data-i18n="step_5">Unlock Premium Privacy</strong></div></div></div></section>
 
-      <!-- TRC-20 -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold mb-4" data-i18n="buy.trcTitle">Покупка через TRON (TRC-20)</h3>
-        <ol class="grid md:grid-cols-2 gap-5 text-lg">
-          <li data-i18n="buy.step1" class="bg-green-800 p-5 rounded-xl">
-            1. Установите кошелёк TronLink (Chrome/Brave) и создайте TRON-адрес.
-          </li>
-          <li data-i18n="buy.step2" class="bg-green-800 p-5 rounded-xl">
-            2. Пополните кошелёк USDT (TRC-20) и немного TRX на комиссии.
-          </li>
-          <li data-i18n="buy.step3" class="bg-green-800 p-5 rounded-xl">
-            3. Перейдите на DEX SunSwap и добавьте контракт EMCOIN.
-          </li>
-          <li data-i18n="buy.step4" class="bg-green-800 p-5 rounded-xl">
-            4. Обменяйте USDT на EMCOIN и подтвердите транзакцию.
-          </li>
-        </ol>
-        <div class="mt-6 flex flex-wrap items-center gap-3">
-          <a id="sunswap" class="btn px-6 py-3 bg-yellow-400 text-black font-bold rounded-xl" target="_blank" href="#" data-i18n="buy.openSunswap">
-            Открыть SunSwap
-          </a>
-          <a id="tronlink" class="underline" target="_blank" href="https://www.tronlink.org/" data-i18n="buy.getTronlink">
-            Скачать TronLink
-          </a>
-        </div>
-      </div>
+<section class="section" id="ecosystem"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="eco_eyebrow">Ecosystem</div><h2 data-i18n="eco_title">One ecosystem. One coin. One messenger.</h2><p data-i18n="eco_text">EMCOIN is being developed alongside real digital products focused on privacy, communication and long-term utility.</p></div><div class="grid3"><div class="card"><div class="icon">💬</div><h3>EMC Messenger</h3><p data-i18n="eco_1">Private communication and secure messaging.</p></div><div class="card"><div class="icon">🪙</div><h3>EMCOIN</h3><p data-i18n="eco_2">Utility token for premium ecosystem services.</p></div><div class="card"><div class="icon">👑</div><h3>EMC Premium</h3><p data-i18n="eco_3">PRO and ULTIMATE privacy memberships.</p></div><div class="card"><div class="icon">🏢</div><h3>EMC Business</h3><p data-i18n="eco_4">Private business communication tools.</p></div><div class="card"><div class="icon">☁</div><h3>EMC Cloud</h3><p data-i18n="coming">Coming Soon</p></div><div class="card"><div class="icon">💳</div><h3>EMC Payments</h3><p data-i18n="coming">Coming Soon</p></div></div></div></section>
 
-      <!-- BEP-20 -->
-      <div class="mb-10">
-        <h3 class="text-2xl font-semibold mb-4" data-i18n="buy.bepTitle">Покупка через BNB Smart Chain (BEP-20)</h3>
-        <ol class="grid md:grid-cols-2 gap-5 text-lg">
-          <li data-i18n="buy.bepStep1" class="bg-green-800 p-5 rounded-xl">
-            1. Установите MetaMask или Trust Wallet и добавьте сеть BNB Smart Chain.
-          </li>
-          <li data-i18n="buy.bepStep2" class="bg-green-800 p-5 rounded-xl">
-            2. Пополните кошелёк BNB, USDT или BUSD в сети BEP-20.
-          </li>
-          <li data-i18n="buy.bepStep3" class="bg-green-800 p-5 rounded-xl">
-            3. Перейдите на DEX PancakeSwap и добавьте контракт EMCOIN (BEP-20).
-          </li>
-          <li data-i18n="buy.bepStep4" class="bg-green-800 p-5 rounded-xl">
-            4. Обменяйте выбранный токен на EMCOIN и подтвердите транзакцию.
-          </li>
-        </ol>
-        <div class="mt-6 flex flex-wrap items-center gap-3">
-          <a id="pancake" class="btn px-6 py-3 bg-yellow-400 text-black font-bold rounded-xl" target="_blank" href="#" data-i18n="buy.openPancake">
-            Открыть PancakeSwap
-          </a>
-          <a id="metamask" class="underline" target="_blank" href="https://metamask.io/download/" data-i18n="buy.getMetamask">
-            Установить MetaMask / Trust Wallet
-          </a>
-        </div>
-      </div>
+<section class="section" id="plans"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="plans_eyebrow">Upgrade Plans</div><h2 data-i18n="plans_title">Upgrade your account with EMCOIN.</h2><p data-i18n="plans_text">PRO and ULTIMATE memberships are designed to unlock advanced privacy features. Payment is made in EMCOIN.</p></div><div class="plans"><div class="plan"><span class="badge" data-i18n="basic_badge">Free</span><h3>BASIC</h3><div class="price">$0</div><ul><li data-i18n="basic_1">Standard Messaging</li><li data-i18n="basic_2">Voice Messages</li><li data-i18n="basic_3">Contact Management</li></ul></div><div class="plan"><span class="badge" data-i18n="pro_badge">Pay in EMCOIN</span><h3>PRO</h3><div class="price">$11 <span style="font-size:16px;color:var(--muted)">/ year</span></div><ul><li data-i18n="pro_1">Hide Online Status</li><li data-i18n="pro_2">Delete Messages For Both Sides</li><li data-i18n="pro_3">Stealth Mode</li><li data-i18n="pro_4">Enhanced Privacy</li></ul><a href="#payment" class="btn primary" data-i18n="upgrade_pro">Upgrade To PRO</a></div><div class="plan featured"><span class="badge" data-i18n="ultimate_badge">Maximum Privacy</span><h3>ULTIMATE</h3><div class="price">$25 <span style="font-size:16px;color:var(--muted)">/ year</span></div><ul><li data-i18n="ult_1">Everything Included In PRO</li><li data-i18n="ult_2">Hidden Read Receipts</li><li data-i18n="ult_3">Maximum Privacy Features</li><li data-i18n="ult_4">Priority Support</li></ul><a href="#payment" class="btn goldbtn" data-i18n="upgrade_ultimate">Upgrade To ULTIMATE</a></div></div></div></section>
 
-      <!-- Альтернативный способ USDT -->
-      <button id="altToggle" type="button" class="text-xs underline opacity-80" data-i18n="buy.altToggle">
-        Не получается купить EMCOIN? Альтернативный способ оплаты USDT
-      </button>
+<section class="section" id="payment"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="pay_eyebrow">Payment</div><h2 data-i18n="pay_title">Pay with EMCOIN.</h2><p data-i18n="pay_text">Official payment addresses will be published here before subscription activation. Send EMCOIN only to official addresses listed on this website.</p></div><div class="grid2"><div class="card"><h3>TRC20</h3><p data-i18n="address_coming">Official payment address: Coming Soon</p></div><div class="card"><h3>BEP20</h3><p data-i18n="address_coming">Official payment address: Coming Soon</p></div></div></div></section>
 
-      <div id="altBox" class="mt-4 hidden bg-green-800 p-5 rounded-xl text-sm space-y-3">
-        <!-- RU -->
-        <div data-lang="ru" class="space-y-2">
-          <p><strong>Альтернативный способ (USDT TRC-20)</strong></p>
-          <p>Если у вас не получается купить EMCOIN через кошелёк и DEX, вы можете воспользоваться резервным вариантом:</p>
-          <ol class="list-decimal ml-5 space-y-1">
-            <li>Отправьте нужную сумму <strong>USDT (TRC-20)</strong> на адрес:
-              <span class="font-mono break-all backup-address">TXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-            </li>
-            <li>Сохраните TXID (ID транзакции).</li>
-            <li>Свяжитесь с нами через Telegram или EMCOIN Messenger и укажите ваш адрес кошелька и TXID.</li>
-          </ol>
-          <p class="text-xs opacity-80">
-            Этот способ резервный и может занимать больше времени, чем покупка через SunSwap или PancakeSwap.
-          </p>
-        </div>
+<section class="section" id="download"><div class="container"><div class="download"><div class="phone"><div class="lock">🔐</div><strong>EMC</strong><span>Android APK</span></div><div><div class="eyebrow" data-i18n="download_eyebrow">Download Center</div><h2 data-i18n="download_title">EMC Messenger Android APK</h2><p data-i18n="download_text">Official APK downloads, release notes, version history and verification tools will be available here after launch.</p><p><strong class="gold" data-i18n="status_label">Status:</strong> <span data-i18n="status_value">Under Development</span></p><div class="actions"><a class="btn primary" href="#contact" data-i18n="notify_btn">Notify Me</a><a class="btn secondary" href="#roadmap" data-i18n="roadmap_btn">View Roadmap</a></div></div></div></div></section>
 
-        <!-- EN -->
-        <div data-lang="en" class="space-y-2 hidden">
-          <p><strong>Alternative method (USDT TRC-20)</strong></p>
-          <p>If you cannot buy EMCOIN via wallet and DEX, you can use this backup method:</p>
-          <ol class="list-decimal ml-5 space-y-1">
-            <li>Send the required amount of <strong>USDT (TRC-20)</strong> to:
-              <span class="font-mono break-all backup-address">TXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-            </li>
-            <li>Save the transaction hash (TXID).</li>
-            <li>Contact us via Telegram or EMCOIN Messenger and provide your wallet address and TXID.</li>
-          </ol>
-          <p class="text-xs opacity-80">
-            This is a backup method and may take longer than buying via SunSwap or PancakeSwap.
-          </p>
-        </div>
+<section class="section" id="token"><div class="container grid2"><div><div class="eyebrow" data-i18n="token_eyebrow">EMCOIN Utility</div><h2 data-i18n="token_title">Not just a token. A utility asset for premium privacy services.</h2><p data-i18n="token_text">EMCOIN is designed to power premium features, ecosystem payments and future privacy-focused products inside the EMC ecosystem.</p></div><div class="utility"><div class="u-center">EMCOIN</div><div class="node n1" data-i18n="utility_1">PRO Membership</div><div class="node n2" data-i18n="utility_2">ULTIMATE Membership</div><div class="node n3" data-i18n="utility_3">Premium Services</div><div class="node n4" data-i18n="utility_4">Future Products</div><div class="node n5" data-i18n="utility_5">Ecosystem Payments</div></div></div></section>
 
-        <!-- AR -->
-        <div data-lang="ar" class="space-y-2 hidden text-right">
-          <p><strong>طريقة بديلة (USDT TRC-20)</strong></p>
-          <p>إذا لم تتمكّن من شراء EMCOIN عبر المحفظة ومنصّات DEX يمكنك استخدام هذا الخيار الاحتياطي:</p>
-          <ol class="list-decimal mr-5 space-y-1">
-            <li>أرسل المبلغ المطلوب من <strong>USDT (TRC-20)</strong> إلى العنوان:
-              <span class="font-mono break-all backup-address">TXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
-            </li>
-            <li>احتفظ برقم العملية TXID.</li>
-            <li>تواصل معنا عبر تيليغرام أو EMCOIN Messenger واذكر عنوان محفظتك ورقم العملية.</li>
-          </ol>
-          <p class="text-xs opacity-80">
-            هذه الطريقة احتياطية وقد تستغرق وقتاً أطول من الشراء عبر SunSwap أو PancakeSwap.
-          </p>
-        </div>
-      </div>
+<section class="section" id="roadmap"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="road_eyebrow">Roadmap</div><h2 data-i18n="road_title">Long-term development vision.</h2></div><div class="road"><div class="road-item"><div class="year">2025</div><div class="road-content" data-i18n="road_1">EMCOIN Launch</div></div><div class="road-item"><div class="year">2026</div><div class="road-content" data-i18n="road_2">EMC Messenger Release</div></div><div class="road-item"><div class="year">2026</div><div class="road-content" data-i18n="road_3">Premium Subscription System</div></div><div class="road-item"><div class="year">2027</div><div class="road-content" data-i18n="road_4">Business Communication Platform</div></div><div class="road-item"><div class="year">2028+</div><div class="road-content" data-i18n="road_5">Global Ecosystem Expansion</div></div></div></div></section>
 
-      <p class="mt-4 text-sm opacity-80" data-i18n="buy.note">
-        Примечание: если пула ликвидности ещё нет, обмен будет недоступен — дождитесь объявления в Telegram.
-      </p>
-    </div>
-  </section>
+<section class="section" id="faq"><div class="container"><div class="section-head center"><div class="eyebrow">FAQ</div><h2 data-i18n="faq_title">Frequently asked questions.</h2></div><div class="faq"><details><summary data-i18n="faq_q1">What is EMCOIN?</summary><p data-i18n="faq_a1">EMCOIN is the utility token of the EMC ecosystem, designed for premium privacy services and future digital products.</p></details><details><summary data-i18n="faq_q2">What is EMC Messenger?</summary><p data-i18n="faq_a2">EMC Messenger is a privacy-focused messenger currently in development.</p></details><details><summary data-i18n="faq_q3">Will the APK be available here?</summary><p data-i18n="faq_a3">Yes. The official Android APK download area will be published on this website after launch.</p></details><details><summary data-i18n="faq_q4">Does EMCOIN guarantee profit?</summary><p data-i18n="faq_a4">No. EMCOIN does not provide financial guarantees. The project focuses on utility, development and ecosystem growth.</p></details></div></div></section>
 
-  <section id="privacy" class="py-16 md:py-20 bg-black bg-opacity-70">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold gold mb-4 text-center" data-i18n="privacy.title">
-        Приватность и анонимность
-      </h2>
-      <p class="max-w-3xl mx-auto text-lg mb-6 text-center" data-i18n="privacy.subtitle">
-        EMCOIN Messenger создаётся с приоритетом конфиденциальности и анонимности пользователей.
-      </p>
-      <ul class="max-w-3xl mx-auto text-sm md:text-base space-y-2 list-disc list-inside">
-        <li data-i18n="privacy.point1">Мы не используем ваши сообщения для рекламы и обучения ИИ.</li>
-        <li data-i18n="privacy.point2">Минимальный сбор и хранение данных — только то, что необходимо для работы сервиса.</li>
-        <li data-i18n="privacy.point3">Гибкие настройки приватности: скрытие номера, статуса, фото и активности.</li>
-        <li data-i18n="privacy.point4">Возможность входа без номера телефона и использование анонимных ID в расширенных тарифах.</li>
-      </ul>
-    </div>
-  </section>
+<section class="section" id="contact"><div class="container"><div class="section-head center"><div class="eyebrow" data-i18n="contact_eyebrow">Community</div><h2 data-i18n="contact_title">Join the EMCOIN ecosystem.</h2><p data-i18n="contact_text">Follow development updates, community news and future EMC Messenger announcements.</p></div><div class="grid3"><a class="card" href="#" target="_blank"><h3>Telegram</h3><p data-i18n="social_coming">Coming Soon</p></a><a class="card" href="#" target="_blank"><h3>X / Twitter</h3><p>@emcoin_token</p></a><a class="card" href="mailto:info@emcoin.vip"><h3>Email</h3><p>info@emcoin.vip</p></a></div></div></section>
+</main>
 
-  <section id="contact" class="py-16 md:py-20 bg-black bg-opacity-70">
-    <div class="max-w-6xl mx-auto px-6 text-center md:text-left">
-      <h2 class="text-3xl md:text-4xl font-bold gold mb-6" data-i18n="contact.title">Контакты</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div>
-          <p class="font-semibold">Email</p>
-          <p><a id="emailLink" class="text-yellow-300 underline">support@emcoin.vip</a></p>
-        </div>
-        <div>
-          <p class="font-semibold">Telegram</p>
-          <p><a id="tgLink" class="text-yellow-300 underline" target="_blank">t.me/emcoin</a></p>
-        </div>
-        <div>
-          <p class="font-semibold">Twitter</p>
-          <p><a id="twLink" class="text-yellow-300 underline" target="_blank">@emcoin</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+<footer><div class="container"><div class="footer"><div><h4>EMCOIN</h4><span data-i18n="footer_about">Privacy. Freedom. Communication.</span></div><div><h4 data-i18n="footer_product">Product</h4><a href="#messenger">Messenger</a><a href="#download">Download</a><a href="#plans">Plans</a></div><div><h4>EMCOIN</h4><a href="#token">Token</a><a href="#ecosystem">Ecosystem</a><a href="#roadmap">Roadmap</a></div><div><h4 data-i18n="footer_resources">Resources</h4><a href="#faq">FAQ</a><a href="#contact">Support</a><a href="#payment">Payment</a></div><div><h4 data-i18n="footer_legal">Legal</h4><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Disclaimer</a></div></div><div class="disc" data-i18n="disclaimer">EMCOIN is a utility-focused digital asset. This website does not provide investment advice, financial guarantees or profit promises. Cryptocurrency involves risk. Always verify official contract addresses and payment information before making any transaction.</div></div></footer>
 
-  <footer class="py-6 text-center bg-green-900 text-yellow-200 text-sm">
-    <img src="assets/logo.png" alt="EMCOIN Logo" class="h-10 mx-auto mb-2" onerror="this.style.display='none'">
-    © 2025 EMCOIN. All Rights Reserved.
-  </footer>
-
-  <script>
-    const dict = {
-      "ru": {
-        "nav.home":"Главная","nav.tokenomics":"Токеномика","nav.buy":"Как купить","nav.contact":"Контакты","nav.privacy":"Приватность",
-        "hero.subtitle":"Цифровая валюта нового поколения: скорость, надежность и глобальное принятие.",
-        "hero.cta":"Купить EMCOIN","tok.title":"Токеномика",
-        "tok.supply":"Общее предложение: 100,000,000 EMCOIN",
-        "tok.distribution":"Распределение: 40% Пул ликвидности • 25% Экосистема • 15% Маркетинг • 10% Команда • 5% Резерв • 5% Private/Whitelist",
-        "tok.contractTron":"Открыть контракт EMCOIN (TRC-20)",
-        "tok.contractBsc":"Открыть контракт EMCOIN (BEP-20)",
-        "buy.title":"Как купить",
-        "buy.trcTitle":"Покупка через TRON (TRC-20)",
-        "buy.bepTitle":"Покупка через BNB Smart Chain (BEP-20)",
-        "buy.step1":"1. Установите кошелёк TronLink (Chrome/Brave) и создайте TRON-адрес.",
-        "buy.step2":"2. Пополните кошелёк USDT (TRC-20) и немного TRX на комиссии.",
-        "buy.step3":"3. Перейдите на DEX SunSwap и добавьте контракт EMCOIN.",
-        "buy.step4":"4. Обменяйте USDT на EMCOIN и подтвердите транзакцию.",
-        "buy.bepStep1":"1. Установите MetaMask или Trust Wallet и добавьте сеть BNB Smart Chain.",
-        "buy.bepStep2":"2. Пополните кошелёк BNB, USDT или BUSD в сети BEP-20.",
-        "buy.bepStep3":"3. Перейдите на DEX PancakeSwap и добавьте контракт EMCOIN (BEP-20).",
-        "buy.bepStep4":"4. Обменяйте выбранный токен на EMCOIN и подтвердите транзакцию.",
-        "buy.openSunswap":"Открыть SunSwap",
-        "buy.getTronlink":"Скачать TronLink",
-        "buy.openPancake":"Открыть PancakeSwap",
-        "buy.getMetamask":"Установить MetaMask / Trust Wallet",
-        "buy.altToggle":"Не получается купить EMCOIN? Альтернативный способ оплаты USDT",
-        "buy.note":"Примечание: если пула ликвидности ещё нет, обмен будет недоступен — дождитесь объявления в Telegram.",
-        "contact.title":"Контакты",
-        "privacy.title":"Приватность и анонимность",
-        "privacy.subtitle":"EMCOIN Messenger создаётся с приоритетом конфиденциальности и анонимности пользователей.",
-        "privacy.point1":"Мы не используем ваши сообщения для рекламы и обучения ИИ.",
-        "privacy.point2":"Минимальный сбор и хранение данных — только то, что необходимо для работы сервиса.",
-        "privacy.point3":"Гибкие настройки приватности: скрытие номера, статуса, фото и активности.",
-        "privacy.point4":"Возможность входа без номера телефона и использование анонимных ID в расширенных тарифах."
-      },
-      "en": {
-        "nav.home":"Home","nav.tokenomics":"Tokenomics","nav.buy":"How to Buy","nav.contact":"Contact","nav.privacy":"Privacy",
-        "hero.subtitle":"Next-generation digital currency: speed, reliability, global adoption.",
-        "hero.cta":"Get EMCOIN","tok.title":"Tokenomics",
-        "tok.supply":"Total Supply: 100,000,000 EMCOIN",
-        "tok.distribution":"Distribution: 40% Liquidity Pool • 25% Ecosystem • 15% Marketing • 10% Team • 5% Reserve • 5% Private/Whitelist",
-        "tok.contractTron":"Open EMCOIN contract (TRC-20)",
-        "tok.contractBsc":"Open EMCOIN contract (BEP-20)",
-        "buy.title":"How to Buy",
-        "buy.trcTitle":"Buy via TRON (TRC-20)",
-        "buy.bepTitle":"Buy via BNB Smart Chain (BEP-20)",
-        "buy.step1":"1. Install TronLink (Chrome/Brave) and create a TRON address.",
-        "buy.step2":"2. Fund your wallet with USDT (TRC-20) and a little TRX for gas.",
-        "buy.step3":"3. Go to the SunSwap DEX and add the EMCOIN contract.",
-        "buy.step4":"4. Swap USDT → EMCOIN and confirm the transaction.",
-        "buy.bepStep1":"1. Install MetaMask or Trust Wallet and add the BNB Smart Chain network.",
-        "buy.bepStep2":"2. Fund your wallet with BNB, USDT or BUSD on BEP-20.",
-        "buy.bepStep3":"3. Open PancakeSwap and add the EMCOIN (BEP-20) contract.",
-        "buy.bepStep4":"4. Swap your token to EMCOIN and confirm the transaction.",
-        "buy.openSunswap":"Open SunSwap",
-        "buy.getTronlink":"Download TronLink",
-        "buy.openPancake":"Open PancakeSwap",
-        "buy.getMetamask":"Install MetaMask / Trust Wallet",
-        "buy.altToggle":"Having trouble buying EMCOIN? Alternative USDT payment option",
-        "buy.note":"Note: if the liquidity pool is not live yet, swapping will be unavailable — wait for the Telegram announcement.",
-        "contact.title":"Contact",
-        "privacy.title":"Privacy & Anonymity",
-        "privacy.subtitle":"EMCOIN Messenger is being built with privacy and anonymity as top priorities.",
-        "privacy.point1":"We do not use your messages for advertising or AI training.",
-        "privacy.point2":"Minimal data collection and storage — only what is required for the service to run.",
-        "privacy.point3":"Flexible privacy settings: hide number, status, photos and activity.",
-        "privacy.point4":"Ability to sign in without a phone number and use anonymous IDs in advanced plans."
-      },
-      "ar": {
-        "nav.home":"الرئيسية","nav.tokenomics":"الاقتصاد الرمزي","nav.buy":"كيفية الشراء","nav.contact":"تواصل","nav.privacy":"الخصوصية",
-        "hero.subtitle":"عملة رقمية للجيل القادم: سرعة وموثوقية واعتماد عالمي.",
-        "hero.cta":"اشترِ EMCOIN","tok.title":"الاقتصاد الرمزي",
-        "tok.supply":"الإجمالي المتداول: 100,000,000 EMCOIN",
-        "tok.distribution":"التوزيع: ‎40% سيولة • ‎25% منظومة • ‎15% تسويق • ‎10% فريق • ‎5% احتياطي • ‎5% بيع خاص/قائمة بيضاء",
-        "tok.contractTron":"عرض عقد EMCOIN (TRC-20)",
-        "tok.contractBsc":"عرض عقد EMCOIN (BEP-20)",
-        "buy.title":"كيفية الشراء",
-        "buy.trcTitle":"الشراء عبر TRON (TRC-20)",
-        "buy.bepTitle":"الشراء عبر BNB Smart Chain (BEP-20)",
-        "buy.step1":"1. ثبّت محفظة TronLink (Chrome/Brave) وأنشئ عنوان TRON.",
-        "buy.step2":"2. موّل المحفظة بـ USDT (TRC-20) وقليل من TRX للرسوم.",
-        "buy.step3":"3. انتقل إلى منصة SunSwap وأضف عقد EMCOIN.",
-        "buy.step4":"4. قم بالمبادلة من USDT إلى EMCOIN وأكّد العملية.",
-        "buy.bepStep1":"1. ثبّت محفظة MetaMask أو Trust Wallet وأضف شبكة BNB Smart Chain.",
-        "buy.bepStep2":"2. موّل المحفظة بـ BNB أو USDT أو BUSD على شبكة BEP-20.",
-        "buy.bepStep3":"3. افتح PancakeSwap وأضف عقد EMCOIN (BEP-20).",
-        "buy.bepStep4":"4. بدّل الرمز الذي لديك إلى EMCOIN وأكّد العملية.",
-        "buy.openSunswap":"فتح SunSwap",
-        "buy.getTronlink":"تحميل TronLink",
-        "buy.openPancake":"فتح PancakeSwap",
-        "buy.getMetamask":"تثبيت MetaMask / Trust Wallet",
-        "buy.altToggle":"تواجه صعوبة في شراء EMCOIN؟ طريقة بديلة للدفع بـ USDT",
-        "buy.note":"ملاحظة: إذا لم يتم تفعيل مجمع السيولة بعد فلن تتاح المبادلة — انتظر إعلان تيليغرام.",
-        "contact.title":"تواصل",
-        "privacy.title":"الخصوصية والسرّية",
-        "privacy.subtitle":"يتم تطوير EMCOIN Messenger مع التركيز على الخصوصية والسرّية للمستخدمين.",
-        "privacy.point1":"لا نستخدم رسائلك للإعلانات أو لتدريب الذكاء الاصطناعي.",
-        "privacy.point2":"نقوم بجمع وتخزين أقل قدر ممكن من البيانات اللازمة لتشغيل الخدمة.",
-        "privacy.point3":"إعدادات خصوصية مرنة: إخفاء الرقم والحالة والصور والنشاط.",
-        "privacy.point4":"إمكانية الدخول دون رقم هاتف واستخدام معرفات مجهولة في الباقات المتقدمة."
-      }
-    };
-
-    function applyLang(lang){
-      document.documentElement.lang = lang;
-      document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-      document.querySelectorAll("[data-i18n]").forEach(el=>{
-        const key = el.getAttribute("data-i18n");
-        if(dict[lang][key]) el.textContent = dict[lang][key];
-      });
-
-      // показываем текст альтернативного способа только для выбранного языка
-      document.querySelectorAll("#altBox [data-lang]").forEach(el=>{
-        const show = el.getAttribute("data-lang") === lang;
-        el.classList.toggle("hidden", !show);
-      });
-    }
-
-    document.getElementById("lang").addEventListener("change", (e)=>applyLang(e.target.value));
-    applyLang("ru");
-
-    // Ссылки
-    document.getElementById("emailLink").href = "mailto:" + EMAIL_ADDR;
-    document.getElementById("emailLink").textContent = EMAIL_ADDR;
-    document.getElementById("tgLink").href = TELEGRAM_URL;
-    document.getElementById("twLink").href = TWITTER_URL;
-
-    // TRON / BSC ссылки
-    const sunswap = document.getElementById("sunswap");
-    sunswap.href = "https://sunswap.com/#/v2?outputCurrency=" + encodeURIComponent(TRC20_CONTRACT_ADDRESS);
-
-    const contractLinkTron = document.getElementById("contractLinkTron");
-    contractLinkTron.href = "https://tronscan.org/#/token20/" + TRC20_CONTRACT_ADDRESS;
-
-    const pancake = document.getElementById("pancake");
-    pancake.href = "https://pancakeswap.finance/swap?outputCurrency=" + encodeURIComponent(BEP20_CONTRACT_ADDRESS);
-
-    const contractLinkBsc = document.getElementById("contractLinkBsc");
-    contractLinkBsc.href = "https://bscscan.com/token/" + BEP20_CONTRACT_ADDRESS;
-
-    // Альтернативный способ
-    const altToggle = document.getElementById("altToggle");
-    const altBox    = document.getElementById("altBox");
-    if (altToggle && altBox){
-      altToggle.addEventListener("click", () => {
-        altBox.classList.toggle("hidden");
-      });
-    }
-
-    // Вставляем адрес USDT во все языковые блоки
-    document.querySelectorAll(".backup-address").forEach(el=>{
-      el.textContent = BACKUP_USDT_ADDRESS;
-    });
-  </script>
+<script>
+const translations={
+en:{brand_sub:"Ecosystem",nav_messenger:"Messenger",nav_plans:"Plans",nav_download:"Download",nav_token:"Token",nav_roadmap:"Roadmap",nav_contact:"Contact",nav_cta:"Download APK",hero_eyebrow:"Privacy • Messenger • Utility Token",hero_title_1:"The World's Most Confidential",hero_title_2:"Messenger",hero_text:"EMCOIN powers a privacy-focused digital ecosystem built around EMC Messenger, premium privacy features and future digital services.",btn_download:"Download APK",btn_upgrade:"Upgrade Account",btn_buy:"Buy EMCOIN",chip_1:"Powered by EMCOIN",chip_2:"PRO & ULTIMATE Plans",chip_3:"Android APK Coming Soon",stat_supply:"Total Supply",stat_tron:"TRON Network",stat_bsc:"BSC Network",stat_dev:"Development Vision",why_eyebrow:"EMC Messenger",why_title:"Privacy is not a feature. Privacy is the foundation.",why_text:"EMC Messenger is designed for users who want more control over their conversations, identity and digital communication.",feature_1_title:"Screenshot Protection",feature_1_text:"Designed to detect screenshots and screen recording attempts.",feature_2_title:"Anonymous Accounts",feature_2_text:"Communicate without exposing unnecessary personal identity.",feature_3_title:"Secret Chats",feature_3_text:"Private conversations with advanced protection tools.",feature_4_title:"Self-Destruct Messages",feature_4_text:"Messages can automatically disappear based on privacy settings.",compare_eyebrow:"Comparison",compare_title:"Built for serious privacy.",table_feature:"Feature",table_1:"Screenshot Detection",table_2:"Secret Chats",table_3:"Anonymous Accounts",table_4:"Stealth Mode",table_5:"Self-Destruct Messages",how_eyebrow:"How It Works",how_title:"From download to premium privacy.",step_1:"Download EMC Messenger",step_2:"Create Your Account",step_3:"Acquire EMCOIN",step_4:"Upgrade To PRO Or ULTIMATE",step_5:"Unlock Premium Privacy",eco_eyebrow:"Ecosystem",eco_title:"One ecosystem. One coin. One messenger.",eco_text:"EMCOIN is being developed alongside real digital products focused on privacy, communication and long-term utility.",eco_1:"Private communication and secure messaging.",eco_2:"Utility token for premium ecosystem services.",eco_3:"PRO and ULTIMATE privacy memberships.",eco_4:"Private business communication tools.",coming:"Coming Soon",plans_eyebrow:"Upgrade Plans",plans_title:"Upgrade your account with EMCOIN.",plans_text:"PRO and ULTIMATE memberships are designed to unlock advanced privacy features. Payment is made in EMCOIN.",basic_badge:"Free",basic_1:"Standard Messaging",basic_2:"Voice Messages",basic_3:"Contact Management",pro_badge:"Pay in EMCOIN",pro_1:"Hide Online Status",pro_2:"Delete Messages For Both Sides",pro_3:"Stealth Mode",pro_4:"Enhanced Privacy",ultimate_badge:"Maximum Privacy",ult_1:"Everything Included In PRO",ult_2:"Hidden Read Receipts",ult_3:"Maximum Privacy Features",ult_4:"Priority Support",upgrade_pro:"Upgrade To PRO",upgrade_ultimate:"Upgrade To ULTIMATE",pay_eyebrow:"Payment",pay_title:"Pay with EMCOIN.",pay_text:"Official payment addresses will be published here before subscription activation. Send EMCOIN only to official addresses listed on this website.",address_coming:"Official payment address: Coming Soon",download_eyebrow:"Download Center",download_title:"EMC Messenger Android APK",download_text:"Official APK downloads, release notes, version history and verification tools will be available here after launch.",status_label:"Status:",status_value:"Under Development",notify_btn:"Notify Me",roadmap_btn:"View Roadmap",token_eyebrow:"EMCOIN Utility",token_title:"Not just a token. A utility asset for premium privacy services.",token_text:"EMCOIN is designed to power premium features, ecosystem payments and future privacy-focused products inside the EMC ecosystem.",utility_1:"PRO Membership",utility_2:"ULTIMATE Membership",utility_3:"Premium Services",utility_4:"Future Products",utility_5:"Ecosystem Payments",road_eyebrow:"Roadmap",road_title:"Long-term development vision.",road_1:"EMCOIN Launch",road_2:"EMC Messenger Release",road_3:"Premium Subscription System",road_4:"Business Communication Platform",road_5:"Global Ecosystem Expansion",faq_title:"Frequently asked questions.",faq_q1:"What is EMCOIN?",faq_a1:"EMCOIN is the utility token of the EMC ecosystem, designed for premium privacy services and future digital products.",faq_q2:"What is EMC Messenger?",faq_a2:"EMC Messenger is a privacy-focused messenger currently in development.",faq_q3:"Will the APK be available here?",faq_a3:"Yes. The official Android APK download area will be published on this website after launch.",faq_q4:"Does EMCOIN guarantee profit?",faq_a4:"No. EMCOIN does not provide financial guarantees. The project focuses on utility, development and ecosystem growth.",contact_eyebrow:"Community",contact_title:"Join the EMCOIN ecosystem.",contact_text:"Follow development updates, community news and future EMC Messenger announcements.",social_coming:"Coming Soon",footer_about:"Privacy. Freedom. Communication.",footer_product:"Product",footer_resources:"Resources",footer_legal:"Legal",disclaimer:"EMCOIN is a utility-focused digital asset. This website does not provide investment advice, financial guarantees or profit promises. Cryptocurrency involves risk. Always verify official contract addresses and payment information before making any transaction."},
+ru:{brand_sub:"Экосистема",nav_messenger:"Мессенджер",nav_plans:"Тарифы",nav_download:"Скачать",nav_token:"Токен",nav_roadmap:"Дорожная карта",nav_contact:"Контакты",nav_cta:"Скачать APK",hero_eyebrow:"Приватность • Мессенджер • Utility Token",hero_title_1:"Самый конфиденциальный",hero_title_2:"мессенджер в мире",hero_text:"EMCOIN питает privacy-экосистему вокруг EMC Messenger, премиальных функций приватности и будущих цифровых сервисов.",btn_download:"Скачать APK",btn_upgrade:"Повысить тариф",btn_buy:"Купить EMCOIN",chip_1:"Powered by EMCOIN",chip_2:"PRO и ULTIMATE",chip_3:"Android APK скоро",stat_supply:"Общая эмиссия",stat_tron:"Сеть TRON",stat_bsc:"Сеть BSC",stat_dev:"Видение развития",why_eyebrow:"EMC Messenger",why_title:"Приватность — это не функция. Приватность — это основа.",why_text:"EMC Messenger создаётся для пользователей, которым нужен больший контроль над перепиской, личностью и цифровым общением.",feature_1_title:"Защита от скриншотов",feature_1_text:"Разрабатывается для обнаружения скриншотов и записи экрана.",feature_2_title:"Анонимные аккаунты",feature_2_text:"Общение без раскрытия лишних личных данных.",feature_3_title:"Секретные чаты",feature_3_text:"Личные разговоры с расширенными инструментами защиты.",feature_4_title:"Самоуничтожение сообщений",feature_4_text:"Сообщения могут автоматически исчезать по настройкам приватности.",compare_eyebrow:"Сравнение",compare_title:"Создано для серьёзной приватности.",table_feature:"Функция",table_1:"Обнаружение скриншотов",table_2:"Секретные чаты",table_3:"Анонимные аккаунты",table_4:"Stealth Mode",table_5:"Самоуничтожение сообщений",how_eyebrow:"Как это работает",how_title:"От скачивания до премиальной приватности.",step_1:"Скачать EMC Messenger",step_2:"Создать аккаунт",step_3:"Получить EMCOIN",step_4:"Перейти на PRO или ULTIMATE",step_5:"Открыть премиальные функции",eco_eyebrow:"Экосистема",eco_title:"Одна экосистема. Одна монета. Один мессенджер.",eco_text:"EMCOIN развивается вместе с реальными цифровыми продуктами, ориентированными на приватность, коммуникацию и долгосрочную полезность.",eco_1:"Приватная коммуникация и безопасные сообщения.",eco_2:"Utility-токен для премиальных сервисов экосистемы.",eco_3:"PRO и ULTIMATE подписки приватности.",eco_4:"Инструменты приватной бизнес-коммуникации.",coming:"Скоро",plans_eyebrow:"Тарифы",plans_title:"Повышайте тариф с помощью EMCOIN.",plans_text:"PRO и ULTIMATE открывают расширенные функции приватности. Оплата производится в EMCOIN.",basic_badge:"Бесплатно",basic_1:"Обычные сообщения",basic_2:"Голосовые сообщения",basic_3:"Управление контактами",pro_badge:"Оплата EMCOIN",pro_1:"Скрытие онлайн-статуса",pro_2:"Удаление сообщений у обеих сторон",pro_3:"Stealth Mode",pro_4:"Расширенная приватность",ultimate_badge:"Максимальная приватность",ult_1:"Всё из PRO",ult_2:"Скрытые отчёты о прочтении",ult_3:"Максимальные функции приватности",ult_4:"Приоритетная поддержка",upgrade_pro:"Перейти на PRO",upgrade_ultimate:"Перейти на ULTIMATE",pay_eyebrow:"Оплата",pay_title:"Оплата через EMCOIN.",pay_text:"Официальные адреса оплаты будут опубликованы здесь перед активацией подписок. Отправляйте EMCOIN только на официальные адреса, указанные на этом сайте.",address_coming:"Официальный адрес оплаты: скоро",download_eyebrow:"Центр загрузки",download_title:"EMC Messenger Android APK",download_text:"Официальная загрузка APK, история версий, release notes и проверка файла будут доступны здесь после запуска.",status_label:"Статус:",status_value:"В разработке",notify_btn:"Уведомить меня",roadmap_btn:"Смотреть roadmap",token_eyebrow:"Польза EMCOIN",token_title:"Не просто токен. Utility-актив для премиальных сервисов приватности.",token_text:"EMCOIN предназначен для премиальных функций, платежей внутри экосистемы и будущих privacy-продуктов EMC.",utility_1:"PRO подписка",utility_2:"ULTIMATE подписка",utility_3:"Премиальные сервисы",utility_4:"Будущие продукты",utility_5:"Платежи экосистемы",road_eyebrow:"Roadmap",road_title:"Долгосрочное видение развития.",road_1:"Запуск EMCOIN",road_2:"Запуск EMC Messenger",road_3:"Система премиум-подписок",road_4:"Платформа бизнес-коммуникации",road_5:"Глобальное расширение экосистемы",faq_title:"Частые вопросы.",faq_q1:"Что такое EMCOIN?",faq_a1:"EMCOIN — utility-токен экосистемы EMC для премиальных сервисов приватности и будущих цифровых продуктов.",faq_q2:"Что такое EMC Messenger?",faq_a2:"EMC Messenger — privacy-мессенджер, который сейчас находится в разработке.",faq_q3:"APK будет доступен здесь?",faq_a3:"Да. Официальная зона загрузки Android APK будет опубликована на этом сайте после запуска.",faq_q4:"EMCOIN гарантирует прибыль?",faq_a4:"Нет. EMCOIN не даёт финансовых гарантий. Проект фокусируется на полезности, разработке и росте экосистемы.",contact_eyebrow:"Community",contact_title:"Присоединяйтесь к экосистеме EMCOIN.",contact_text:"Следите за разработкой, новостями сообщества и анонсами EMC Messenger.",social_coming:"Скоро",footer_about:"Приватность. Свобода. Коммуникация.",footer_product:"Продукт",footer_resources:"Ресурсы",footer_legal:"Юридическое",disclaimer:"EMCOIN — utility-ориентированный цифровой актив. Этот сайт не является инвестиционной рекомендацией, не даёт финансовых гарантий и не обещает прибыль. Криптовалюта связана с риском. Всегда проверяйте официальные адреса контрактов и платежей перед любой транзакцией."},
+ar:{brand_sub:"النظام البيئي",nav_messenger:"المراسلة",nav_plans:"الخطط",nav_download:"تحميل",nav_token:"الرمز",nav_roadmap:"الخطة",nav_contact:"اتصال",nav_cta:"تحميل APK",hero_eyebrow:"الخصوصية • المراسلة • رمز استخدام",hero_title_1:"أكثر تطبيق مراسلة",hero_title_2:"سرية في العالم",hero_text:"تدعم EMCOIN نظاماً رقمياً يركز على الخصوصية حول EMC Messenger وميزات الخصوصية المميزة والخدمات الرقمية المستقبلية.",btn_download:"تحميل APK",btn_upgrade:"ترقية الحساب",btn_buy:"شراء EMCOIN",chip_1:"مدعوم بواسطة EMCOIN",chip_2:"خطط PRO و ULTIMATE",chip_3:"Android APK قريباً",stat_supply:"الإجمالي",stat_tron:"شبكة TRON",stat_bsc:"شبكة BSC",stat_dev:"رؤية التطوير",why_eyebrow:"EMC Messenger",why_title:"الخصوصية ليست ميزة. الخصوصية هي الأساس.",why_text:"تم تصميم EMC Messenger للمستخدمين الذين يريدون تحكماً أكبر في محادثاتهم وهويتهم واتصالاتهم الرقمية.",feature_1_title:"حماية من لقطات الشاشة",feature_1_text:"مصمم لاكتشاف محاولات لقطات الشاشة وتسجيل الشاشة.",feature_2_title:"حسابات مجهولة",feature_2_text:"تواصل دون كشف بيانات شخصية غير ضرورية.",feature_3_title:"محادثات سرية",feature_3_text:"محادثات خاصة بأدوات حماية متقدمة.",feature_4_title:"رسائل ذاتية الحذف",feature_4_text:"يمكن أن تختفي الرسائل تلقائياً حسب إعدادات الخصوصية.",compare_eyebrow:"مقارنة",compare_title:"مصمم للخصوصية الجادة.",table_feature:"الميزة",table_1:"اكتشاف لقطة الشاشة",table_2:"محادثات سرية",table_3:"حسابات مجهولة",table_4:"وضع التخفي",table_5:"رسائل ذاتية الحذف",how_eyebrow:"كيف يعمل",how_title:"من التحميل إلى الخصوصية المميزة.",step_1:"تحميل EMC Messenger",step_2:"إنشاء حسابك",step_3:"الحصول على EMCOIN",step_4:"الترقية إلى PRO أو ULTIMATE",step_5:"فتح ميزات الخصوصية المميزة",eco_eyebrow:"النظام البيئي",eco_title:"نظام واحد. عملة واحدة. تطبيق واحد.",eco_text:"يتم تطوير EMCOIN إلى جانب منتجات رقمية حقيقية تركز على الخصوصية والاتصال والاستخدام طويل الأمد.",eco_1:"اتصال خاص ورسائل آمنة.",eco_2:"رمز استخدام للخدمات المميزة.",eco_3:"عضويات خصوصية PRO و ULTIMATE.",eco_4:"أدوات اتصال أعمال خاصة.",coming:"قريباً",plans_eyebrow:"خطط الترقية",plans_title:"قم بترقية حسابك باستخدام EMCOIN.",plans_text:"تم تصميم عضويات PRO و ULTIMATE لفتح ميزات خصوصية متقدمة. يتم الدفع بعملة EMCOIN.",basic_badge:"مجاني",basic_1:"رسائل عادية",basic_2:"رسائل صوتية",basic_3:"إدارة جهات الاتصال",pro_badge:"الدفع بعملة EMCOIN",pro_1:"إخفاء حالة الاتصال",pro_2:"حذف الرسائل للطرفين",pro_3:"وضع التخفي",pro_4:"خصوصية محسنة",ultimate_badge:"أقصى خصوصية",ult_1:"كل ميزات PRO",ult_2:"إخفاء إشعارات القراءة",ult_3:"أقصى ميزات الخصوصية",ult_4:"دعم أولوية",upgrade_pro:"الترقية إلى PRO",upgrade_ultimate:"الترقية إلى ULTIMATE",pay_eyebrow:"الدفع",pay_title:"الدفع باستخدام EMCOIN.",pay_text:"سيتم نشر عناوين الدفع الرسمية هنا قبل تفعيل الاشتراكات. أرسل EMCOIN فقط إلى العناوين الرسمية المدرجة في هذا الموقع.",address_coming:"عنوان الدفع الرسمي: قريباً",download_eyebrow:"مركز التحميل",download_title:"EMC Messenger Android APK",download_text:"ستتوفر روابط APK الرسمية وملاحظات الإصدار وسجل النسخ وأدوات التحقق هنا بعد الإطلاق.",status_label:"الحالة:",status_value:"قيد التطوير",notify_btn:"أخبرني",roadmap_btn:"عرض الخطة",token_eyebrow:"استخدام EMCOIN",token_title:"ليس مجرد رمز. أصل استخدام لخدمات الخصوصية المميزة.",token_text:"تم تصميم EMCOIN لتشغيل الميزات المميزة والمدفوعات داخل النظام والمنتجات المستقبلية التي تركز على الخصوصية.",utility_1:"عضوية PRO",utility_2:"عضوية ULTIMATE",utility_3:"خدمات مميزة",utility_4:"منتجات مستقبلية",utility_5:"مدفوعات النظام",road_eyebrow:"الخطة",road_title:"رؤية تطوير طويلة الأمد.",road_1:"إطلاق EMCOIN",road_2:"إطلاق EMC Messenger",road_3:"نظام الاشتراكات المميزة",road_4:"منصة اتصال الأعمال",road_5:"توسيع النظام عالمياً",faq_title:"الأسئلة الشائعة.",faq_q1:"ما هي EMCOIN؟",faq_a1:"EMCOIN هو رمز استخدام لنظام EMC، مصمم لخدمات الخصوصية المميزة والمنتجات الرقمية المستقبلية.",faq_q2:"ما هو EMC Messenger؟",faq_a2:"EMC Messenger هو تطبيق مراسلة يركز على الخصوصية وهو حالياً قيد التطوير.",faq_q3:"هل سيكون APK متاحاً هنا؟",faq_a3:"نعم. سيتم نشر منطقة التحميل الرسمية لتطبيق Android APK على هذا الموقع بعد الإطلاق.",faq_q4:"هل تضمن EMCOIN الربح؟",faq_a4:"لا. EMCOIN لا تقدم ضمانات مالية. يركز المشروع على الاستخدام والتطوير ونمو النظام.",contact_eyebrow:"المجتمع",contact_title:"انضم إلى نظام EMCOIN.",contact_text:"تابع تحديثات التطوير وأخبار المجتمع وإعلانات EMC Messenger المستقبلية.",social_coming:"قريباً",footer_about:"الخصوصية. الحرية. التواصل.",footer_product:"المنتج",footer_resources:"الموارد",footer_legal:"القانوني",disclaimer:"EMCOIN أصل رقمي يركز على الاستخدام. هذا الموقع لا يقدم نصائح استثمارية أو ضمانات مالية أو وعوداً بالربح. العملات الرقمية تنطوي على مخاطر. تحقق دائماً من عناوين العقود والدفع الرسمية قبل أي معاملة."}
+};
+function applyLang(lang){const d=translations[lang]||translations.en;document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.getAttribute("data-i18n");if(d[k])el.textContent=d[k]});document.querySelectorAll(".lang button").forEach(b=>b.classList.toggle("active",b.dataset.lang===lang));localStorage.setItem("siteLang",lang)}
+document.addEventListener("DOMContentLoaded",()=>{applyLang(localStorage.getItem("siteLang")||"en");document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)))});
+</script>
 </body>
 </html>
